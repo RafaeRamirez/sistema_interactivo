@@ -1,27 +1,27 @@
-  /* Estilos generales del cuerpo */
+/* General body styles */
   body {
-    background-color: #ffffff; /* Fondo blanco */
-    display: flex;             /* Flexbox para alinear contenido verticalmente */
+    background-color: #ffffff;/* White background */
+    display: flex;           /* Flexbox to align content vertically */
     flex-direction: column;
     align-items: center;
-    color: #faf3f3;            /* Color de texto (casi blanco, quizá debas revisar contraste) */
+    color: #faf3f3;         /* Text color (almost white, you may need to check contrast) */
     font-family: "Times New Roman", serif;
   }
 
-  /* Título principal */
+/* Main title */
   h1 {
     margin-bottom: 30px;
     text-align: center;
   }
 
-  /* Estilos del formulario principal */
+
   form {
     padding: 25px 30px;
-    border-radius: 12px;                        /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);   /* Sombra para efecto flotante */
+    border-radius: 12px;                        /* Rounded edges */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Shadow for floating effect */
     width: 100%;
-    max-width: 400px;                           /* Ancho máximo */
-    box-sizing: border-box;                     /* Padding no suma al ancho */
+                        /* Maximum width */
+    box-sizing: border-box;                  /* Padding does not add to the width */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,13 +31,12 @@
     position: relative;
     overflow: hidden;
   }
-
-  /* Espaciado inferior entre divs (si usas muchos contenedores div) */
+/* Bottom spacing between divs (if you use a lot of div containers) */
   div {
     margin-bottom: 20px;
   }
 
-  /* Etiquetas del formulario */
+/* Form labels */
   label {
     display: block;
     margin-bottom: 8px;
@@ -45,7 +44,7 @@
     color: #555;
   }
 
-  /* Campos de entrada */
+/* Input fields */
   input {
     width: 100%;
     padding: 10px;
@@ -54,7 +53,7 @@
     font-size: 16px;
   }
 
-  /* Botón */
+/* Button */
   button {
     background-color: #007BFF;
     color: white;
@@ -66,31 +65,31 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-
-  /* Efecto hover del botón */
+/* Button hover effect */
   button:hover {
     background-color: #1e5085;
   }
 
-  /* Imagen en el encabezado */
+/* Image in header */
   img {
     width: 20%;
-    box-shadow: 10px 10px 10px rgb(0, 38, 255);  /* Sombra azul */
+    box-shadow: 10px 10px 10px rgb(0, 38, 255);  /* Blue shadow */
     margin-bottom: 20px;
     text-align: center;
     border-radius: 20px;
   }
 
-  /* Resultado debajo del formulario */
+/* Result below the form */
   #resultado {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 18px;
     text-align: center;
     color: #333;
     font-weight: bold;
+    padding: 50px;
   }
 
-  /* Pie de página fijo en la parte inferior */
+  /* Fixed footer at the bottom */
   footer {
     position: fixed;
     bottom: 0;
@@ -99,14 +98,17 @@
     background-color: #007BFF;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px;
+  }
+  section {
+    padding: 20px;
   }
 
-  /* Responsive: Pantallas pequeñas (móviles) */
+/* Responsive: Small screens (mobile) */
   @media (max-width: 480px) {
     body {
       padding: 20px 10px;
-      background-color: #d0d4ce; /* Fondo más gris para móviles */
+      background-color: #d0d4ce; /* Grayer background for mobile */
       color: #333;
       font-family: "Times New Roman", serif;
     }
@@ -126,7 +128,7 @@
     }
   }
 
-  /* Responsive: Tablets (entre 768px y 1024px) */
+ /* Responsive: Tablets (between 768px and 1024px) */
   @media (min-width: 768px) and (max-width: 1024px) {
     form {
       max-width: 90%;
@@ -135,8 +137,7 @@
     input,
     button {
       font-size: 15px;
-      /* El grid-template-columns no aplica aquí porque form no es grid */
-      /* Puedes eliminar esa línea o aplicarla a un contenedor de inputs si es necesario */
+ 
     }
 
     #resultado {

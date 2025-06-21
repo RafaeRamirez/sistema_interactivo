@@ -1,72 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Basic Configuration -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <!-- Configuración básica -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Information -->
+    <meta
+      name="description"
+      content="About This web application, developed with HTML, CSS, and JavaScript,create an interactive system that calculates the age if you are of legal age"
+    />
+    <meta
+      name="keywords"
+      content="edad, progreso"
+    />
+    <!-- Additional information -->
+    <meta
+      name="sitedomain"
+      content="https://github.com/RafaeRamirez/SPA_IMC.git"
+    />
+    <meta name="organization" content="RafaeRamirez" />
+    <meta name="author" content="Rafael Ramirez Bolaño" />
+    <meta name="designer" content="Rafael Ramirez Bolaño" />
+    <meta name="copyright" content="© 2025 RafaeRamirez. All rights reserved" />
+    <!-- Rules for crawlers -->
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="15days" />
 
-  <!-- Información para SEO -->
-  <meta name="description" content="El Índice de Masa Corporal (IMC) es una medida que relaciona tu peso con tu estatura. Te ayuda a determinar si te encuentras dentro de un rango de peso saludable para tu altura. Un IMC alto puede indicar un mayor riesgo de problemas de salud relacionados con el sobrepeso y la obesidad.">
-  <meta name="keywords" content="peso, altura, kilogramos, metros, fórmula, bajo peso, peso saludable, sobrepeso, obesidad, riesgo, detección">
+    <!-- Appearance on mobile browsers -->
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Información adicional -->
-  <meta name="sitedomain" content="https://github.com/RafaeRamirez/SPA_IMC.git">
-  <meta name="organization" content="RafaeRamirez">
-  <meta name="author" content="Rafael Ramirez Bolaño">
-  <meta name="designer" content="Rafael Ramirez Bolaño">
-  <meta name="copyright" content="© 2025 RafaeRamirez. All rights reserved">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <!-- Document title -->
+    <title>Sistema Interactivo</title>
+  </head>
 
-  <!-- Reglas para rastreadores -->
-  <meta name="robots" content="index,follow">
-  <meta name="googlebot" content="index,follow">
-  <meta name="revisit-after" content="15days">
+  <body>
+    <!-- Header with image/logo -->
+    <header>
+      <h1>
+        <img
+          src="src/icons/ChatGPT_Image_19_jun_2025_05_57_05_p.m..webp"
+          alt="icono"
+        />
+      </h1>
+    </header>
 
-  <!-- Apariencia en navegadores móviles -->
-  <meta name="theme-color" content="#ffffff">
+    <!-- Main content -->
+    <main>
+      <!-- Interactive form -->
+      <section class="formulario">
+        <form class="myForm">
+          <label for="nombre">Ingresa el nombre</label>
+          <input id="nombre" name="nombre" placeholder="Maria" type="text" />
 
-  <!-- CSS externo -->
-  <link rel="stylesheet" href="src/css/styles.css">
+          <label for="edad">Ingresa la edad</label>
+          <input id="edad" name="edad" placeholder="23" type="text" />
 
-  <!-- Título del documento -->
-  <title>Sistema Interactivo</title>
-</head>
-
-<body>
-  <!-- Encabezado con imagen/logo -->
-  <header>
-    <h1>
-      <img src="src/icons/ChatGPT_Image_19_jun_2025_05_57_05_p.m..webp" alt="icono">
-    </h1>
-  </header>
-
-  <!-- Contenido principal -->
-  <main>
-    <!-- Formulario interactivo -->
-    <form class="myForm">
-      <label for="nombre">Ingresa el nombre</label>
-      <input id="nombre" name="nombre" placeholder="Maria" type="text">
-
-      <label for="edad">Ingresa la edad</label>
-      <input id="edad" name="edad" placeholder="23" type="text">
-
-      <button type="button" onclick="enviarFormulario()">Enviar</button>
-    </form>
-
-    <!-- Resultado generado dinámicamente -->
-    <div id="resultado"></div>
-  </main>
-
-  <!-- Lógica del formulario -->
-  <script src="src/js/sistema_interactivo.js"></script>
-
-  <!-- Pie de página -->
-  <footer>
-    <p>&copy; 2025 Sistema_interactivo. Todos los derechos reservados.</p>
-    <address>
-      Email: <a href="mailto:soportesistema@Sistema_interactivo.com">soportesistema@sistema_interactivo.com</a>
-    </address>
-  </footer>
-</body>
-
+          <button type="button" onclick="enviarFormulario()">Enviar</button>
+        </form>
+        <div id="resultado"></div>
+     
+      </section>
+      <!-- Dynamically generated result -->
+    </main>
+    <!-- Form logic -->
+    <script src="src/js/sistema_interactivo.js"></script>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Sistema_interactivo. Todos los derechos reservados.</p>
+      <address>
+        Email:
+        <a href="mailto:soportesistema@Sistema_interactivo.com"
+          >soportesistema@sistema_interactivo.com</a
+        >
+      </address>
+    </footer>
+  </body>
 </html>
